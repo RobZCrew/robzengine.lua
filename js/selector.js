@@ -291,7 +291,8 @@ function createSidebarContent(prefix) {
 		'getRandomInt': 'uncategorized.html',
 		'getRandomFloat': 'uncategorized.html',
 		'debugPrint': 'uncategorized.html',
-		'getModSetting': 'uncategorized.html'
+		'getModSetting': 'uncategorized.html',
+		'overrideDynamicFunction': 'uncategorized.html'
 	};
 
 	// Create list elements and append to itemList
