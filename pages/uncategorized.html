@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Psych Engine - Uncategorized Functions</title>
+		<title>RobZ Engine - Uncategorized Functions</title>
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/header.css">
 		<link rel="stylesheet" href="../css/search.css">
@@ -30,7 +30,7 @@
 			<div class="header">
 				<a href="../index.html">
 					<img width="64" src="../assets/icon.ico" alt="Psych Engine Logo" draggable="false">
-					<div class="headertext">Psych Engine - Lua Script API</div>
+					<div class="headertext">RobZ Engine - Lua Script API</div>
 				</a>
 			</div>
 		</div>
@@ -209,6 +209,18 @@
 				<li class="exampleitem"><span class="methodexample">getModSetting('testbool')</span> - Returns the value from "testbool" setting, which is a boolean, returning either true or false.</li>
 				<li class="exampleitem"><span class="methodexample">getModSetting('testnumber')</span> - Returns the value from "testnumber" setting, which is an integer, returning a number.</li>
 				<li class="exampleitem"><span class="methodexample">getModSetting('testkey')</span> - Returns the keys from "testkey", which is a table value with Gamepad and Keyboard inputs, <a href="https://drive.google.com/file/d/1cdT9zqzuAA72xWIA26XRFS_ujlrVOLE-/view?usp=sharing">check this snippet for using it properly</a>.</li>
+			</ul>
+
+			<h2 id="overrideDynamicFunction">overrideDynamicFunction</h2>
+			<p class="methodbox">overrideDynamicFunction(<span class="variablemarkup">funcName</span>:String, <span class="variablemarkup">luaFunc</span>:String)</p>
+			<p>Overrides a dynamic function of PlayState for a custom function with the indicated name</p>
+			<ul>
+				<li><b><span class="variablemarkup">funcName</span></b> - The dynamic function name</li>
+				<li><b><span class="variablemarkup">luaFunc</span></b> - The custom function name</li>
+			</ul>
+			<h4>Examples:</h4>
+			<ul class="methoddiv">
+				<li class="exampleitem"><span class="methodexample>overrideDynamicFunction('updateIconsPosition', 'myScaleFunction')</span> - Overrides the updateIconsPosition function by a function called "myScaleFunction"</li>
 			</ul>
 	</body>
 </html>
